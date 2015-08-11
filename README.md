@@ -12,6 +12,7 @@ android模拟位置程序,俗称GPS欺骗，测试微信附近定位可用，但
 运行之前
 
 * 请先打开android手机-设置-开发者选项-允许模拟位置，打钩。
+* 修改定位方法成仅限GPS，三星设置：设置-位置-模式-仅限GPS。
 * 修改AndroidManifest.xml中的，使用你自己的百度地图key，申请地址：http://lbsyun.baidu.com/apiconsole/key
 
 #问题反馈
