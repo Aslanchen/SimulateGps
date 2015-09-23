@@ -2,6 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res/com.aslan.simulategps"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical" >
 
     <android.support.v7.widget.Toolbar
@@ -27,5 +28,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="QQ：122560007" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邮箱：122560007@163.com" />
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aslan.simulategps"
     android:versionCode="1"
@@ -25,7 +25,6 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            填写你的百度key
             android:value="您的百度key" />
 
         <service
