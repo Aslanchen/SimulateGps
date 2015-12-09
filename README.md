@@ -21,5 +21,3 @@ android模拟位置程序,俗称GPS欺骗，只能修改采用GPS定位的软件
 
 * 作者: 陈恒飞
 * 邮件(122560007@qq.com)
-* QQ: 122560007
-* 新浪微博: [@Aslan_theOne](http://weibo.com/alsnahcne)
