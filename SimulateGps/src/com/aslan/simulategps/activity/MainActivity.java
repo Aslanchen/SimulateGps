@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v7.widget.Toolbar.OnMenuItemClickListener;
 import android.util.Log;
 import android.view.Menu;
@@ -188,6 +190,10 @@ public class MainActivity extends BaseActivity implements LocationListener,
 		location.setLongitude(longitude);
 		location.setAltitude(2.0f);
 		location.setAccuracy(3.0f);
+		if (Build.VERSION.SDK_INT > 16) {
+			//api 16以上的需要加上这一句才能模拟定位 , 也就是targetSdkVersion > 16
+			location.setElapsedRealtimeNanos(SystemClock.elapsedRealtimeNanos());
+		}
 		locationManager.setTestProviderLocation(mMockProviderName, location);
 	}
 
