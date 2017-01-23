@@ -7,10 +7,12 @@
 版本：1.0.0
 
 手机定位方式目前有4种：基站定位，WIFI定位，GPS定位，AGPS定位。
-目前比较稳定的思路就是使用xposed,传说中的Android神器，用它对app_process进行注入，但此方法需要root权限。参考：http://www.jianshu.com/p/91e312faa6c3
-我这里本方法是利用手机自带的"模拟位置"功能实现运行时修改LocationManager结果，原理：使用android自带的调试api，模拟gps provider的结果。
-LocationManager.setTestProviderLocation(Provider, Location);  
-不稳定，特征明显，容易按特征嗅探到（有反作弊机制的游戏基本都能查出来），需要打开开发者的允许模拟位置选项。
+
+目前比较稳定的思路就是使用hook，用它对app_process进行注入，找到定位的方法，然后进行修改，但此方法需要root权限。参考：http://www.jianshu.com/p/91e312faa6c3
+
+我这里方法是利用手机自带的"模拟位置"功能实现运行时修改LocationManager结果，原理：使用android自带的调试api，模拟gps provider的结果。
+LocationManager.setTestProviderLocation(Provider, Location);
+此不稳定，特征明显，容易按特征嗅探到（有反作弊机制的游戏基本都能查出来），需要打开开发者的允许模拟位置选项。
 
 # 重要说明
 运行之前
